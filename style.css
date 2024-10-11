@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
 body {
   font-family: Afacad Flux;
   padding: 0;
@@ -145,22 +146,15 @@ footer {
 .abo {
   font-size: 2.5rem;
 }
-.btn-abo {
-  height: 50px;
-  width: 200px;
-  background-color: #000000;
-  color: white;
-  border: 3px solid rgb(255, 255, 255);
-}
-.btn-abo:hover {
-  border: 5px solid rgb(255, 255, 255);
-  transition: 0.9 ease;
+#btn-paypal {
+  font-size: 2.5rem;
+  margin: 50px;
+  position: relative;
 }
 
 .text-abo {
   font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 100px;
 }
 .contacter {
   margin-right: 25px;
@@ -227,7 +221,7 @@ form {
 .month12 {
   background-color: grey;
   border: 1px solid white;
-  height: 500px;
+  height: 600px;
   width: 300px;
 }
 
