@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <h1><img src="assets/thunder-bolt.png" alt="">IPTV Premium </h1>
+      <h1><img src="assets/thunder-bolt.png" alt="Logo" />IPTV Premium</h1>
       <nav>
         <ul>
           <li><a class="nav-button" href="#accueil">Accueil</a></li>
@@ -20,65 +20,92 @@
         </ul>
       </nav>
     </header>
-    <hr>
-    <section>
-      
-    <div class="carousel-text-container">
-      <div class="carousel">
-        <div class="carousel-images">
-          <img src="assets/foot.jpeg" alt="Image 1" class="active" />
-          <img src="assets/lebron.jpg" alt="Image 2" />
-          <img src="assets/rugby.jpg" alt="Image 3" />
-        </div>
-        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-        <button class="next" onclick="changeImage(1)">&#10095;</button>
-      </div>
 
-      <div class="text-section">
-        <h2>Bienvenue sur IPTV Premium</h2>
-          <article>
-            <p>
-            Découvrez une gamme exceptionnelle de contenus sportifs en direct.
-            Profitez des meilleurs moments de football, de basketball, et plus
-            encore, le tout en streaming de haute qualité.
+    <hr />
+    <div class="fond">
+      <section id="accueil">
+        <div class="carousel-text-container">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="assets/foot.jpeg" alt="Image 1" class="active" />
+              <img src="assets/lebron.jpg" alt="Image 2" />
+              <img src="assets/rugby.jpg" alt="Image 3" />
+            </div>
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+          </div>
+
+          <div class="text-section">
+            <h2>Bienvenue sur IPTV Premium</h2>
+            <article>
+              <p>
+                Découvrez une gamme exceptionnelle de contenus sportifs en
+                direct. Profitez des meilleurs moments de football, de
+                basketball, et plus encore, le tout en streaming de haute
+                qualité.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="barre" />
+
+      <section id="abonnement">
+        <h3 class="abo">Abonnement</h3>
+        <div class="container-purchase">
+          <div class="purchase-plan month3">
+            <h3 class="head">3 mois</h3>
+            <p class="text-abo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              sint quidem enim ad id vero ratione. Nisi, dignissimos. Minima,
+              voluptatum numquam maxime inventore vero temporibus officiis alias
+              earum minus odit?
             </p>
-          </article>
-      </div>
-      <section>
-    </div>
-    <hr class="barre">
-    <div id="abonnement">
-      <h3>Abonnement</h3>
-      <div class="container-purchase">
-            <div class="month3"><p class="head">3 mois</p>
-              <p class="text-abo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sint quidem enim ad id vero ratione. Nisi, dignissimos. Minima, voluptatum numquam maxime inventore vero temporibus officiis alias earum minus odit?</p>
-            </div>
-            <div class="month6"><p class="head">6 mois</p>
-              <p class="text-abo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam sint ad repellendus veniam dolorum earum beatae possimus quasi, amet debitis. Ducimus facere laboriosam fugiat mollitia deleniti repellat iure officia?</p>
-            </div>
-            <div class="month12"><p class="head">12 mois</p>
-              <p class="text-abo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi consequuntur saepe alias dicta distinctio aspernatur suscipit ducimus est debitis! At natus minus ipsam itaque quasi labore, quis quia quam?</p>
-            </div>
-      </div>
-      
-    <div id="contact">
-      <hr class="barre2">
-      <h3 class="contacter">Nous contacter</h3>
-      <p>
+            <button class="btn-abo">clique</button>
+          </div>
+          <div class="purchase-plan month6">
+            <h3 class="head">6 mois</h3>
+            <p class="text-abo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quam sint ad repellendus veniam dolorum earum beatae possimus
+              quasi, amet debitis. Ducimus facere laboriosam fugiat mollitia
+              deleniti repellat iure officia?
+            </p>
+            <button class="btn-abo">clique</button>
+          </div>
+          <div class="purchase-plan month12">
+            <h3 class="head">12 mois</h3>
+            <p class="text-abo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              animi consequuntur saepe alias dicta distinctio aspernatur
+              suscipit ducimus est debitis! At natus minus ipsam itaque quasi
+              labore, quis quia quam?
+            </p>
+            <button class="btn-abo">clique</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <hr class="barre2" />
+        <h3 class="contacter">Nous contacter</h3>
         <form action="">
           <label for="name">Votre nom:</label>
-          <input type="text" name="name" id="name" ><br>
+          <input type="text" name="name" id="name" /><br />
           <label for="email">Votre mail:</label>
-          <input type="email" name="mail" id="mail"><br>
+          <input type="email" name="mail" id="mail" /><br />
           <label for="msg" class="text-msg">Message:</label>
-          <textarea name="msg" id="msg"></textarea><br>
-          <input  type="submit" id="send" value="Envoyer">
+          <textarea name="msg" id="msg"></textarea><br />
+          <input type="submit" id="send" value="Envoyer" />
         </form>
-      </p>
+      </section>
     </div>
     <footer>
       <p>&copy; 2024 IPTV Premium. Tous droits réservés.</p>
     </footer>
+
     <script src="script.js"></script>
+    <script src="purchase.js"></script>
   </body>
 </html>
