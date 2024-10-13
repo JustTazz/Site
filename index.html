@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPTV Premium</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://sandbox.paypal.com/sdk/js?client-id=AUsx0pSKBV1LrEsNRcyBowTgDz6EatNCwRFByJbcDosh87GHxAqYC1QOyhtJES7KlvdCyrih7k7T0vAQ"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="email.js"></script>
   </head>
   <body>
     <header>
@@ -55,10 +59,16 @@
           <div class="purchase-plan month3">
             <h3 class="head">3 mois</h3>
             <p class="text-abo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              soluta cupiditate veritatis porro velit ut! Lorem ipsum dolor sit
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              animi consequuntur saepe alias dicta distinctio aspernatur
+              suscipit ducimus est debitis! At natus minus ipsam itaque quasi
+              labore, quis quia quam?
             </p>
-            <div id="btn-paypal">Payer</div>
+            <a
+              class="btn-payement"
+              href="https://buy.stripe.com/test_3cs145dmyaL85he9AA"
+              >Payer
+            </a>
           </div>
           <div class="purchase-plan month6">
             <h3 class="head">6 mois</h3>
@@ -68,7 +78,11 @@
               quasi, amet debitis. Ducimus facere laboriosam fugiat mollitia
               deleniti repellat iure officia?
             </p>
-            <button id="btn-paypal2">clique</button>
+            <a
+              class="btn-payement"
+              href="https://buy.stripe.com/test_aEU7st2HUf1o8tqcMN"
+              >Payer</a
+            >
           </div>
           <div class="purchase-plan month12">
             <h3 class="head">12 mois</h3>
@@ -78,7 +92,11 @@
               suscipit ducimus est debitis! At natus minus ipsam itaque quasi
               labore, quis quia quam?
             </p>
-            <button id="btn-paypal3">clique</button>
+            <a
+              class="btn-payement"
+              href="https://buy.stripe.com/test_3cs2894Q2f1obFC9AC"
+              >Payer</a
+            >
           </div>
         </div>
       </section>
@@ -86,13 +104,13 @@
       <section id="contact">
         <hr class="barre2" />
         <h3 class="contacter">Nous contacter</h3>
-        <form action="">
+        <form id="contact-form">
           <label for="name">Votre nom:</label>
-          <input type="text" name="name" id="name" /><br />
+          <input type="text" name="from_name" id="name" /><br />
           <label for="email">Votre mail:</label>
-          <input type="email" name="mail" id="mail" /><br />
-          <label for="msg" class="text-msg">Message:</label>
-          <textarea name="msg" id="msg"></textarea><br />
+          <input type="email" name="reply_to" id="email" /><br />
+          <label for="message">Message:</label>
+          <textarea name="message" id="message"></textarea><br />
           <input type="submit" id="send" value="Envoyer" />
         </form>
       </section>
@@ -102,6 +120,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="purchase.js"></script>
+    <script src="send.js"></script>
   </body>
 </html>

@@ -138,6 +138,13 @@ footer {
   padding-top: 8rem;
   text-align: center;
 }
+.btn-payement {
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: #000000;
+  color: white;
+}
+
 #contact {
   padding-top: 10rem;
   text-align: center;
@@ -146,15 +153,10 @@ footer {
 .abo {
   font-size: 2.5rem;
 }
-#btn-paypal {
-  font-size: 2.5rem;
-  margin: 50px;
-  position: relative;
-}
 
 .text-abo {
   font-size: 1.5rem;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .contacter {
   margin-right: 25px;
@@ -169,15 +171,17 @@ label {
   font-size: 1.5rem;
 }
 #name {
-  height: 1.5rem;
+  height: 2rem;
+  font-size: 1rem;
 }
-#mail {
-  height: 1.5rem;
+#email {
+  height: 2rem;
   margin-bottom: 5px;
+  font-size: 1rem;
 }
-#msg {
-  height: 7rem;
-  text-align: start;
+#message {
+  height: 10rem;
+  font-size: 1rem;
 }
 #send {
   font-size: 1rem;
